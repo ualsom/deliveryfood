@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table and Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delight Bistro</h1>
+    </header>
+    
+       <main>
+        
+        <section id="product-list">
+            <h2>Available Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>truffle Risotto</td>
+                        <td>$18</td>
+                        <td>It is high in demand</td>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDh7ofH2Fn8xXHPsVYX69VlWakk_2i-O2uA&s" alt="mitho mitho" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Lamb Sank</td>
+                        <td>$25</td>
+                        <td>It is very delicous</td>
+                        <td><img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/09/02/DV3411_Lamb-Shank-Osobucco_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1630595832716.webp" alt="mitho hae tw" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Sea foods</td>
+                        <td>$22</td>
+                        <td>Special menu of resturant</td>
+                        <td><img src="https://media.istockphoto.com/id/1305699663/photo/seafood-platter-grilled-lobster-shrimps-scallops-langoustines-octopus-squid-on-white-plate.jpg?s=612x612&w=0&k=20&c=iEwdxon7CJ0wQEDy8-kwnz7TLdknVw05vaa-Qc_aHow=" alt="good for eye" width="100"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        
+        <section id="order-form">
+            <h2>Order Form</h2>
+            <!-- Order Form will be added here -->
+        </section>
+    </main>
+    
+    <footer>
+        <section id="order-form">
+            <form action="submit-order.php" method="POST">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <label for="items">Select Item:</label>
+                    <select id="items" name="item" required>
+                        <option value="product1">truffle Risotto- $18</option>
+                        <option value="product2">Lamb shank -$25</option>
+                        <option value="product3">Sea foods
+                            - $22</option>
+                    </select>
+                    
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </fieldset>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+        
+        <p>&copy; 2024 Delight bistro.........</p>
+    </footer>
+</body>
+</html>
